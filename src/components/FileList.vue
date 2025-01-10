@@ -42,27 +42,6 @@ const setFile = (file) => {
 
 </template>
 
-
-<!-- <template>
-  <table width="700px">
-    <tr v-for="file in files" :key="file.id">
-      <td>
-        <a href="#">{{ file.name }}</a>
-      </td>
-      <td>{{ file.size }} B</td>
-      <td>{{ file.format }}</td>
-
-      <div class="buttons">
-        <td>
-          <button @click="setFile(file)" class="rounded-3">
-            <img src="../assets/editButton.svg" alt="edit" />
-          </button>
-        </td>
-      </div>
-    </tr>
-  </table>
-</template> -->
-
 <style scoped>
 table {
   width: 95%;

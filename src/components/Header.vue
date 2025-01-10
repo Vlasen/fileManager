@@ -46,7 +46,6 @@ function logout() {
     </div>
   </header>
 
-  <!-- отображение окна с логином -->
   <div class="userLoginBox" v-if="isActiveUserButton">
     <div class="login">Логин</div>
     <small class="logout">Нажмите, чтобы выйти</small>
@@ -71,10 +70,6 @@ header {
   border-color: rgb(212, 212, 212);
   border-width: 1px;
   z-index: 5;
-}
-
-hr {
-  width: 500;
 }
 
 svg {

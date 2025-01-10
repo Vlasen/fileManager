@@ -10,6 +10,8 @@ const password = ref("");
 
 const emit = defineEmits(["close"]);
 
+alert('Тестовая учетная запись: логин - admin, пароль - 1234.');
+
 function handleSubmit() {
   if (
     login.value === props.user.login &&
@@ -31,7 +33,7 @@ function handleSubmit() {
           <input
             type="text"
             class="form-control"
-            placeholder="ваш логин"
+            placeholder="Логин"
             v-model="login"
           />
         </div>
@@ -41,7 +43,7 @@ function handleSubmit() {
           <input
             type="password"
             class="form-control"
-            placeholder="ваш пароль"
+            placeholder="Пароль"
             v-model="password"
           />
         </div>

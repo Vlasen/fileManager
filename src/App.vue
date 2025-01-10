@@ -30,8 +30,6 @@ const user = {
   password: "1234",
 };
 
-//флаг режима, режим true - правка данных, false -ввод новых
-//для выведения формы редактирования
 const editmode = ref(false);
 const isAddFormVisible = ref(false);
 const isAuthModal = ref(true);
@@ -41,11 +39,8 @@ const currentFile = ref({});
 const currentPage = ref(1);
 const filesPerPage = ref(10);
 
-//доббавляем в демо данные id. потом убрать
 files.map((i) => (i.id = getID()));
 
-//генерируем ветку времени и прикручиваем рандомный хвост для уникальных
-//id в случае частых вызовов
 function getID() {
   return Date.now().toString(36) + Math.random().toString(36).slice(2);
 }
