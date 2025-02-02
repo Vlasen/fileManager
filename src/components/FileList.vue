@@ -46,10 +46,4 @@ const setFile = (file) => {
 table {
   width: 95%;
 }
-
-tr {
-  /* display: flex; */
-  align-items: center;
-  /* justify-content: space-between; */
-}
 </style>
