@@ -10,8 +10,6 @@ const password = ref("");
 
 const emit = defineEmits(["close"]);
 
-alert('Тестовая учетная запись: логин - admin, пароль - 1234.');
-
 function handleSubmit() {
   if (
     login.value === props.user.login &&
@@ -48,6 +46,8 @@ function handleSubmit() {
           />
         </div>
 
+        <label class="authData">Тестовая учетная запись: логин - admin, пароль - 1234.</label>
+
         <button type="submit" class="btn btn-primary" id="addButton">
           Войти
         </button>
@@ -81,7 +81,9 @@ form {
   height: fit-content;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .name {
@@ -94,8 +96,12 @@ input {
   width: 80%;
 }
 #close_add_form,
-addButton {
-  margin: 20px;
+#addButton {
+  margin: 20px auto 0 auto;
   width: 100px;
+}
+
+.authData {
+  color: grey;
 }
 </style>
